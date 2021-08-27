@@ -3,8 +3,7 @@ import { serviceOptions } from "./options/services.options";
 import { environmentOptions } from "./options/environment.options";
 
 const menu = async () => {
-  // TODO: Remove type any to correct type.
-  const shortnames: any = {
+  const shortnames: { [key: string]: string }= {
     chile: '',
     spain: 'sp',
     portugal: 'pt',
@@ -13,8 +12,7 @@ const menu = async () => {
     guatemala: 'gt',
   }
 
-  // TODO: Remove type any to correct type.
-  const regions: any = {
+  const regions: { [key: string]: string } = {
     chile: 'us-east-1',
     spain: 'eu-west-1',
     portugal: 'eu-west-1',
